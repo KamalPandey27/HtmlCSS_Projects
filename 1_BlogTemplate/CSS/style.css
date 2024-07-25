@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f9f8f8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: pink; */
+    padding: 0px 15px;
+    margin: 15px auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar .left {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .left ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left ul li {
+    list-style: none;
+    margin: 0px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.navbar .left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .left ul li a:hover {
+    color: brown;
+}
+
+.right input {
+    padding: 5px 5px;
+    font-size: 0.7rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.nav-btn {
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.section-1 {
+    padding: 10px;
+    position: relative;
+}
+
+.section-1::before {
+    content: '';
+    background: url(../Images/main-img-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15px;
+}
+
+.section-1 .left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 20px;
+}
+
+.section-1 .right img {
+    width: 300px;
+    height: 295px;
+    border-radius: 250px;
+    border: 2px solid var(--main-color);
+}
+
+.section-2 {
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.section-2 h3 {
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 15px 0px;
+}
+
+.featured-article {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+    width: 27%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #f9f8f8;
+}
+
+.featured-article img {
+    width: 95%;
+    height: 280px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footercontainer {
+    margin: 0px auto;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    padding-top: 20px;
+}
+
+.footercontainer .visit {
+    color: white;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.more {
+    padding: 10px;
+}
+
+.more a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+}
+
+.more a:hover {
+    text-shadow: 1px 1px 8px var(--main-color);
+}
+
+
+@media (max-width: 850px) {
+
+    .navbar .left {
+        display: flex;
+        gap: 0px;
+    }
+
+    .navbar .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section-1 .right img {
+        width: 200px;
+        height: 200px;
+        border-radius: 250px;
+        border: 2px solid var(--main-color);
+    }
+
+    .featured-article img {
+        width: 100%;
+        height: 200px;
+        align-self: center;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .articles {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .featured-article {
+        width: 40%;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar .left ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60vw;
+    }
+
+    .section-1 .right {
+        display: none;
+    }
+
+    .articles {
+        flex-wrap: wrap;
+    }
+
+    .featured-article {
+        width: 40%;
+    }
+}
+@media (max-width: 500px){
+    .featured-article {
+        width: 80%;
+    }
+    .navbar .left ul {
+        width: 90vw;
+    }
+    .navbar .left ul li {
+        font-size: 1rem;
+    }
+    .footercontainer {
+        padding: 15px 10px;
+        padding-top: 20px;
+    }
+    .footercontainer .visit {
+        font-size: 0.9rem;
+    }
+}
