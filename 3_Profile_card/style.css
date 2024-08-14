@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    /* background-color: #0e4bf1; */
+}
+
+.profile_card {
+    width: 370px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+ .profile_card::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #0e4bf1;
+    width: 100%;
+    height: 36%;
+} 
+.profile_img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f4f4f4;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.details .name {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.details .work {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.profile_card .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+.media i{
+    font-size: 18px;
+}
+.profile_card .btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 7px 25px;
+    border-radius: 25px;
+    background-color: #4070f4;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0e4bf1;
+}
+
+.profile_card .analytics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.data:last-child {
+    border-right: none;
+}
