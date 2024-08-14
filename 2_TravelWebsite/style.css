@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Styling header part */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(193, 189, 189);
+    margin: 15px 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+nav ul li :hover {
+    color: rgb(237, 150, 84);
+}
+
+nav img {
+    width: 150px;
+}
+
+@media screen and (max-width: 650px) {
+    nav img {
+        width: 80px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav ul li a {
+        font-size: 0.62rem;
+    }
+}
+
+/* End of header part */
+
+/* Styling Hero Section */
+
+.hero-section {
+    background-image: url(Image/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 121px);
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* .hero-section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: calc(100vh - 121px);
+    width: 100vw;
+    object-fit: cover;
+    background-position: center center;
+    overflow: hidden;
+} */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    /* position: relative; */
+    /* height: calc(100vh - 121px); */
+    /* width: 100vw;  */
+    overflow: hidden;
+}
+
+.hero-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 15px;
+    background-color: rgb(249, 121, 57);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14px;
+    transition: all ease-in-out 0.2s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.hero-btn a:hover {
+    background-color: rgb(245, 89, 11);
+}
+
+@media screen and (max-width: 650px) {
+    .hero-heading {
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .hero-sheading {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero-btn a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .hero-btn {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-heading {
+        font-size: 1.7rem;
+    }
+
+    .hero-section {
+        height: 85vh;
+    }
+}
+
+/* styling another section which is destination */
+.section-2 {
+    overflow: hidden;
+    /* position: relative; */
+    /* color: white; */
+}
+
+/* .section-2::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+.section-2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.destination {
+    width: 28vw;
+    padding: 15px;
+}
+
+.destination img {
+    width: 28vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.destination span {
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.destination p {
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.section-2-heading {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-2-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .destination {
+        padding: 10px;
+        width: 40vw;
+    }
+
+    .destination img {
+        width: 40vw;
+        height: 30vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section-2-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .section-2-heading {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .destination img {
+        width: 85vw;
+        height: 30vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .destination {
+        padding: 10px;
+        width: 90vw;
+    }
+
+    .destination p {
+        font-size: 0.8rem;
+    }
+
+    .destination span {
+        font-size: 1.1rem;
+    }
+}
+
+/* Styling about us section  */
+
+.section-3 {
+    padding: 20px;
+}
+
+.section-3-heading {
+    width: 40vw;
+    margin: auto;
+    padding: 10px;
+}
+
+.meet-team {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.section-3-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.about {
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.about-para {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.section-3-container img {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: top top;
+}
+
+.section-3-container .team {
+    width: 20vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-3-container .team .member-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.section-3-container .team .member-role {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .meet-team {
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+
+    .section-3-container img {
+        width: 20vw;
+        height: 15vh;
+        object-fit: cover;
+    }
+
+    .section-3-container .team .member-name {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .section-3-container .team .member-role {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+
+    .about {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    .about-para {
+
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+}
+
+/* Section 4 styling contact us part */
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+    background-color: #f8f5f2;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.section-4-heading h2 {
+    padding-bottom: 10px;
+}
+
+.section-4-para {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.contact-details img {
+    width: 20px;
+    height: 18px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.location a {
+    text-decoration: none;
+    color: black;
+}
+
+.gmail a {
+    color: blue;
+}
+
+.contact-number a {
+    color: blue;
+}
+
+.contact-form {
+    padding: 20px 0px;
+    width: 63vw;
+    margin-right: 35px;
+}
+.contact-form input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.contact-form textarea {
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    height: 150px;
+}
+
+
+.section-4-btn {
+    width: 100px;
+    margin: auto;
+
+}
+
+.section-4-btn button {
+    background-color: rgb(245, 99, 26);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 15px 10px;
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-4-btn button:hover {
+    background-color: rgb(218, 97, 5);
+}
+
+
+@media screen and (max-width: 700px) {
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 0px;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-details img {
+        width: 12px;
+        height: 15px;
+    }
+
+    .section-4-para {
+
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.7rem;
+    }
+
+    .contact-details img {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+/* Footer section Styling */
+footer{
+    background-color: rgb(25, 22, 22);
+    width: 100vw;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(25, 22, 22); */
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+}
+
+
+.footer-section a{
+    padding: 0px 5px;
+}
+
+@media screen and (max-width: 550px) {
+
+    .footer-section{
+        font-size: 10px;
+    }
+    .social-media img{
+        height: 15px;
+        width: 15px;
+    }
+}
