@@ -1,0 +1,42 @@
+-->Understanding units
+
+px -- it is fixed
+% -- It Depend on parent
+vw,vh -- it depend upon screen size not parent
+vmax , vmin -- vmax depend on maximum width or height and vmin depend on minimum height or width
+em ,rem -- em is depend on parent and rem is depend on root element and 1rem is 16px
+
+
+--> Layout of Website 
+
+absolute -- less use absolute
+flexbox use this property more as more possible because flex is automatically shrink and we also use flex-wrap 
+
+---> Media Queries
+max-width and min-width
+max-height and min-height
+
+use 600 or 550px 
+
+key points to keep in mind to make website responsive
+1. Css Flexbox
+2. Css units
+3. Responsive typography
+4. Mobile-First approach
+5. Flexible images and media 
+
+
+Practice! Practice! Practice!
+
+height: calc(100% - 100px) use this to give height
+
+for showing your site in your phone
+ipv4addressofalaptop it is occur when we type ipconfig in  my cmd :5500/index.html
+
+
+
+
+
+
+
+
